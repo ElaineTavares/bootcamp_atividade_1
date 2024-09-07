@@ -1,6 +1,7 @@
 const previousOperation = document.querySelector("#previous_operation")
 const currentOperation = document.querySelector("#current_operation")
 const buttons = document.querySelectorAll("#buttons_container button")
+let clickSound = new Audio("./sound/click.wav")
 
 console.log(buttons)
 
@@ -143,6 +144,7 @@ const calc = new Calculator(previousOperation, currentOperation)
 buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         const value = e.target.innerText
+        clickSound.play()
         // console.log(value)
 
         //if number

@@ -8,10 +8,12 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    align-items: start;
+    flex-flow: row wrap;
     padding-block: 50px;
     background: pink;
+    gap: 100px;
+    border: 2px solid black;
 }
 
 
@@ -110,10 +112,13 @@ button{
 
 .lista h2{
     margin-bottom: 5px;
+    font-size: 2rem;
 }
 
 .lista ol li{
     font-weight: bold;
+    font-size: 2rem;
+    list-style: none;
 }
 
 @keyframes aparecer {

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-block: 50px;
+    background: pink;
+}
+
+
+
+
+.container_borboleta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.container_borboleta img{
+    width: 50px;
+    margin-bottom: 15px;
+
+}
+
+h1{
+    color: #000000;
+    font-weight: bold;
+    opacity: 0;
+    animation: aparecer 6s forwards;
+ 
+}
+
+#calc{
+    border: 2px solid black;
+    width: 276px;
+    background-color: rgb(221, 218, 218);
+    padding-block: 3px;
+    opacity: 0;
+    animation: aparecer 6s forwards;
+}
+
+h3{
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#operations{
+    /* border: 2px solid red; */
+    text-align: end;
+    padding: 10px;
+    height: 80px;
+}
+
+#previous_operation{
+    margin-bottom: 10px;
+}
+
+#current_operation{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#buttons_container{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4px;
+}
+
+button{
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+}
+
+.equal{
+    width: 130px;
+    background-color: #75a5cb;
+}
+
+.equal:hover{
+    background-color: #3a91D8;
+}
+
+.number{
+    background-color: #ffffff;
+}
+
+.number:hover{
+    background-color: rgb(221, 218, 218);
+}
+
+.lista{
+    color: #000000;
+    margin-top: 15px;
+    opacity: 0;
+    animation: aparecer 6s forwards;
+}
+
+.lista h2{
+    margin-bottom: 5px;
+}
+
+.lista ol li{
+    font-weight: bold;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
+
+

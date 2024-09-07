@@ -13,7 +13,7 @@ body{
     padding-block: 50px;
     background: pink;
     gap: 100px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
